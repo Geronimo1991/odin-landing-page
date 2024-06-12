@@ -4,81 +4,62 @@
 
 body {
 	margin: 0;
+}
+
+.container {
+	margin: 0;
 	display: flex;
 	flex-direction: column;
 }
 
-.hero {
+.header {
 	background-color: #1f2937;
 	display: flex;
 	flex-direction: column;
 	padding-top: 8px;
-	padding-left: 120px;
-	padding-right: 120px;
+	padding: 0px 240px;
+	color: white;
 }
 
-.hero .awesome {
-	font-size: 48px;
-	font-weight: bolder;
-	color: #f9faf8;
-}
-
-.header {
+.header__navi {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
 
-.hero .header .links {
-	font-size: 18px;
-	color: #e5e7eb;
-	display: flex;
-	justify-content: end;
-	gap: 16px;
+.header__navi--logo {
 }
 
-.hero .header .logo {
-	font-size: 24px;
-	color: #f9faf8;
+.header__navi--links {
 }
 
-.hero .content {
+.header__content {
 	display: flex;
+	padding: 100px 0px;
 	justify-content: space-between;
-	padding: 80px 0px;
 }
 
-.content .info {
+.header__content--text {
 	display: flex;
 	flex-direction: column;
 }
 
-.hero .image {
+.header__content--awesomeText {
+}
+
+.header__content--subtext {
+}
+
+.header__content--image {
 	background-color: gray;
-	width: 600px;
-	height: 250px;
+	width: 700px;
+	height: 200px;
 	text-align: center;
-	line-height: 250px;
+	line-height: 200px;
 }
 
-button {
-	background-color: #3882f6;
-}
-
-.quote {
-	background-color: #e5e7eb;
-	font-size: 36px;
-	color: #1f2937;
-	font-style: italic;
-	padding: 150px 450px;
-}
-
-footer {
-	background-color: #1f2937;
+.header__content--button--signUp {
+	width: 90px;
+	height: 30px;
 	text-align: center;
-	color: #e5e7eb;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 60px;
 }
