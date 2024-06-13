@@ -18,19 +18,26 @@ body {
 	flex-direction: column;
 	padding-top: 8px;
 	padding: 0px 240px;
-	color: white;
 }
 
 .header__navi {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	padding: 16px 0;
 }
 
 .header__navi--logo {
+	color: #f9faf8;
+	font-size: 24px;
+	font-weight: bold;
 }
 
 .header__navi--links {
+	display: flex;
+	gap: 16px;
+	color: #e5e7eb;
+	font-size: 18px;
 }
 
 .header__content {
@@ -42,12 +49,18 @@ body {
 .header__content--text {
 	display: flex;
 	flex-direction: column;
+	width: 500px;
 }
 
 .header__content--awesomeText {
+	color: #f9faf8;
+	font-size: 48px;
+	font-weight: bolder;
 }
 
 .header__content--subtext {
+	color: #e5e7eb;
+	font-size: 18px;
 }
 
 .header__content--image {
@@ -59,7 +72,14 @@ body {
 }
 
 .header__content--button--signUp {
-	width: 90px;
+	width: 120px;
 	height: 30px;
 	text-align: center;
+	margin: 8px 0px;
+	background-color: #3882f6;
+	color: #f9faf8;
+	font-size: 18px;
+	font-weight: bold;
+	border-radius: 8px;
+	border: #3882f6;
 }
