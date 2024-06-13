@@ -117,3 +117,30 @@ body {
 	border: #3882f6 4px solid;
 	margin: 8px;
 }
+
+.quote {
+	background-color: #e5e7eb;
+	padding: 150px 800px;
+}
+
+.quote__textContainer {
+}
+
+.quote__textContainer--text {
+	color: #1f2937;
+	font-size: 36px;
+	font-style: italic;
+	font-weight: lighter;
+}
+
+.quote__authorContainer {
+	display: flex;
+	justify-content: end;
+}
+
+.quote__authorContainer--author {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+/* TODO fix margins and paddings, author of qoute also */
