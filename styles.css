@@ -7,7 +7,6 @@ body {
 }
 
 .container {
-	margin: 0;
 	display: flex;
 	flex-direction: column;
 }
@@ -120,10 +119,7 @@ body {
 
 .quote {
 	background-color: #e5e7eb;
-	padding: 150px 800px;
-}
-
-.quote__textContainer {
+	padding: 150px 400px;
 }
 
 .quote__textContainer--text {
@@ -141,6 +137,32 @@ body {
 .quote__authorContainer--author {
 	font-size: 24px;
 	font-weight: bold;
+	margin-right: 80px;
+}
+
+.callToAction {
+	padding: 240px, 120px;
+}
+
+.callToAction__container {
+	background-color: #3882f6;
+}
+
+.callToAction__container--header {
+}
+
+.callToAction__container--text {
+}
+
+.callToAction__container--button {
+}
+
+footer {
+	background-color: #1f2937;
+	display: flex;
+	justify-content: center;
+	color: #f9faf8;
+	padding: 16px;
 }
 
 /* TODO fix margins and paddings, author of qoute also */
