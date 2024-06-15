@@ -98,6 +98,7 @@ body {
 
 .informations__content {
 	display: flex;
+	flex-wrap: wrap;
 	gap: 75px;
 	padding: 40px;
 }
@@ -118,8 +119,16 @@ body {
 }
 
 .quote {
+	display: flex;
+	justify-content: center;
 	background-color: #e5e7eb;
-	padding: 150px 400px;
+	padding: 60px 0px;
+}
+
+.quote__textContainer {
+	flex-grow: 0;
+	width: 800px;
+	height: auto;
 }
 
 .quote__textContainer--text {
@@ -141,20 +150,34 @@ body {
 }
 
 .callToAction {
-	padding: 240px, 120px;
+	color: #f9faf8;
+	display: flex;
+	justify-content: center;
+	padding: 60px 0px;
 }
 
 .callToAction__container {
 	background-color: #3882f6;
+	border-radius: 8px;
+	width: 800px;
+	height: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 80px;
 }
 
-.callToAction__container--header {
+.callToAction__textContainer {
+	display: flex;
+	flex-direction: column;
 }
 
-.callToAction__container--text {
+.callToAction__textContainer--header {
+	font-weight: bold;
 }
 
 .callToAction__container--button {
+	border: white solid 1px;
 }
 
 footer {
@@ -164,5 +187,3 @@ footer {
 	color: #f9faf8;
 	padding: 16px;
 }
-
-/* TODO fix margins and paddings, author of qoute also */
