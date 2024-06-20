@@ -6,47 +6,68 @@ body {
 	margin: 0;
 }
 
+.filler {
+	flex-grow: 1;
+	flex-shrink: 1;
+}
+
 .container {
 	display: flex;
 	flex-direction: column;
 }
 
-.header {
+.navi {
 	background-color: #1f2937;
+	padding: 0px 180px;
+	padding-top: 16px;
+	padding-bottom: 100px;
 	display: flex;
-	flex-direction: column;
-	padding-top: 8px;
-	padding: 0px 240px;
+	justify-content: center;
 }
 
-.header__navi {
+.navi__container {
 	display: flex;
-	justify-content: space-between;
+	flex-grow: 1;
+	justify-content: center;
 	align-items: center;
-	padding: 16px 0;
+	max-width: 1600px;
+	min-width: 1200px;
 }
 
-.header__navi--logo {
+.navi__container--logo {
 	color: #f9faf8;
 	font-size: 24px;
 	font-weight: bold;
 }
 
-.header__navi--links {
+.navi__container--links {
 	display: flex;
 	gap: 16px;
 	color: #e5e7eb;
 	font-size: 18px;
 }
 
+.header {
+	background-color: #1f2937;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0px 180px;
+}
+
 .header__content {
 	display: flex;
-	padding: 100px 0px;
-	justify-content: space-between;
+	flex-grow: 1;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 100px;
+	max-width: 1600px;
+	min-width: 1200px;
 }
 
 .header__content--text {
 	display: flex;
+	flex-shrink: 0;
 	flex-direction: column;
 	width: 500px;
 }
@@ -64,10 +85,11 @@ body {
 
 .header__content--image {
 	background-color: gray;
-	width: 700px;
+	width: 500px;
 	height: 200px;
 	text-align: center;
 	line-height: 200px;
+	flex-shrink: 0;
 }
 
 .header__content--button--signUp {
@@ -101,10 +123,14 @@ body {
 	flex-wrap: wrap;
 	gap: 75px;
 	padding: 40px;
+	min-width: 1200px;
+	max-width: 1600px;
 }
 
 .informations__content--image {
-	width: 200px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	text-align: center;
 	color: rgb(43, 142, 175);
 	font-size: 18px;
@@ -118,6 +144,11 @@ body {
 	margin: 8px;
 }
 
+.informations__content--text {
+	display: block;
+	width: 200px;
+}
+
 .quote {
 	display: flex;
 	justify-content: center;
@@ -126,9 +157,9 @@ body {
 }
 
 .quote__textContainer {
-	flex-grow: 0;
-	width: 800px;
-	height: auto;
+	width: 1200px;
+	min-width: 1200px;
+	padding: 0px 400px;
 }
 
 .quote__textContainer--text {
@@ -153,23 +184,25 @@ body {
 	color: #f9faf8;
 	display: flex;
 	justify-content: center;
-	padding: 60px 0px;
+	padding: 60px 180px;
 }
 
 .callToAction__container {
 	background-color: #3882f6;
 	border-radius: 8px;
-	width: 800px;
 	height: 100px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 0 80px;
+	max-width: 1600px;
+	min-width: 1200px;
+	flex: 1;
 }
 
 .callToAction__textContainer {
 	display: flex;
 	flex-direction: column;
+	padding: 0 80px;
 }
 
 .callToAction__textContainer--header {
@@ -178,6 +211,7 @@ body {
 
 .callToAction__container--button {
 	border: white solid 1px;
+	margin-right: 80px;
 }
 
 footer {
